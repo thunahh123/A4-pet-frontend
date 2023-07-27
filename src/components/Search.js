@@ -10,7 +10,7 @@ export const Search = function(){
     // we could build a custom fetch URL string.
     function searchPet()
     {
-      fetch("http://localhost:3001/api?act=search&term="+ searchTerm)
+      fetch("https://pet-backend-q6c5.onrender.com/api?act=search&term="+ searchTerm)
       .then(res => res.json())
       .then(
         (result) => {

@@ -14,7 +14,7 @@ export const Inventory = function(){
     //delete pets
     function deletePet(id)
     {
-      fetch("http://localhost:3001/api?act=delete&id="+ id)
+      fetch("https://pet-backend-q6c5.onrender.com/api?act=delete&id="+ id)
       .then(res => res.json())
       .then(
         (result) => {
@@ -25,7 +25,7 @@ export const Inventory = function(){
     //Add pets
     function addPet()
     {
-      fetch("http://localhost:3001/api?act=add&animal="+newAnimal+"&description="+newDesc+"&age="+newAge+"&price="+newPrice)
+      fetch("https://pet-backend-q6c5.onrender.com/api?act=add&animal="+newAnimal+"&description="+newDesc+"&age="+newAge+"&price="+newPrice)
       .then(res => res.json())
       .then(
         (result) => {
@@ -37,7 +37,7 @@ export const Inventory = function(){
     //update pets
     function updatePet()
     {
-      fetch("http://localhost:3001/api?act=update&id="+updateId +"&animal="+ newAnimal+"&description="+newDesc+"&age="+newAge+"&price="+newPrice)
+      fetch("https://pet-backend-q6c5.onrender.com/api?act=update&id="+updateId +"&animal="+ newAnimal+"&description="+newDesc+"&age="+newAge+"&price="+newPrice)
       .then(res => res.json())
       .then(
         (result) => {
@@ -50,7 +50,7 @@ export const Inventory = function(){
     //fetch Pets
     function fetchPets()
     {
-      fetch("http://localhost:3001/api?act=getall")
+      fetch("https://pet-backend-q6c5.onrender.com/api?act=getall")
       .then(res => res.json())
       .then(
         (result) => {
