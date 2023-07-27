@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#body{
+    @apply bg-blue-gray;
+}
+
+
+.btn{
+    @apply bg-light hover:bg-dark text-white font-bold py-2 px-4 rounded w-1/5;
+}
+
+.navLink {
+    @apply flex-auto px-5 font-bold py-5 text-center ;
+}
+
+.active {
+    @apply bg-blue;
+}
+
